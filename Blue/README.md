@@ -4,23 +4,19 @@
 
 --------------------------------
 
-First, as a way to facilitate everything, I will target the host as a bash variable: 
+First, as a way to facilitate everything, add to /etc/hosts: 
 
-```bash
-blue=10.10.49.103
+```shell
+10.10.49.103    blue
 ```
 
 ## Nmap Scanning  - TERMINAL OUTPUT
 
 ### Command:
 
-```bash
+```shell
 $ nmap -sC -sV -A -script vuln $blue
-```     
 
-### OUTPUT:
-
-```
 Host discovery disabled (-Pn). All addresses will be marked 'up' and scan times will be slower.
 Starting Nmap 7.91 ( https://nmap.org ) at 2021-02-27 16:15 EST
 Nmap scan report for 10.10.49.103
